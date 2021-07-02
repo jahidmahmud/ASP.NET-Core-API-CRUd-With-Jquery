@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+    <!-- <script type="text/javascript" src="myscript.js" ></script> -->
+    <script type="text/javascript" src="editscript.js" ></script>
+</head>
+<body>
+    
+<div class="container">
+        <h1>Edit form</h1><hr/>
+        <div class="row">
+            <span id="errormsg1" class="h4 text-danger"></span>
+            <input type="hidden" id="drinksId"/>
+            <div class="form-group">
+                <label for="Name">Name</label>
+                <input type="text" class="form-control" id="drinksName"/>
+                <span id="nameErr"></span>
+            </div>
+            <div class="form-group">
+                <label for="Quantity">Quantity</label>
+                <input type="number" class="form-control" id="drinksQuantity" min="0"/>
+                <span id="quantityErr"></span>
+            </div>
+            <div class="form-group">
+                <label for="UnitPrice">Price</label>
+                <input type="number" class="form-control" id="drinksUnitPrice" min="0"/>
+                <span id="priceErr"></span>
+            </div>
+            <button type="submit" class="btn btn-primary" id="updatebtn">Update</button>
+        </div>
+    </div> 
+
+</body>
+</html>

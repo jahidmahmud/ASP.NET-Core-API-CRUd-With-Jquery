@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="myscript.js" ></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h2 id="mike"></h2>
+            <h2 id="mike2"></h2>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Unit Price</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+    </div>
+    <div class="row py-5">
+        <p class="h4">Click <button id="here">Here</button> to delete all item which quantity is less than 500.</p>
+    </div>
+    <div class="row mt-4">
+        <p class="h3">Total Price: <p class="h3" id="totalprice"></p> </p>
+    </div>
+    <div class="row py-5">
+        <h1>Add New Cold Drinks</h1>
+        <span id="errormsg" class="h4 text-danger"></span>
+        <input type="hidden" id="coldDrinksId"/>
+            <div class="form-group">
+                <label for="coldDrinksName">Name</label>
+                <input type="text" class="form-control" id="coldDrinksName"/>
+                <span id="nameErr"></span>
+            </div>
+            <div class="form-group">
+                <label for="coldDrinksQuantity">Quantity</label>
+                <input type="number" class="form-control" id="coldDrinksQuantity" min="0"/>
+                <span id="quantityErr"></span>
+            </div>
+            <div class="form-group">
+                <label for="coldDrinksUnitPrice">Price</label>
+                <input type="number" class="form-control" id="coldDrinksUnitPrice" min="0"/>
+                <span id="priceErr"></span>
+            </div>
+            <button type="submit" class="btn btn-primary" id="addbtn">Add</button>
+    </div>
+    </div>
+</body>
+</html>
